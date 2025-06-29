@@ -25,7 +25,7 @@ const ContactForm = () => {
     // Exemplo: redirecionar para WhatsApp com a mensagem
     const message = `Olá! Meu nome é ${formData.name}. ${formData.message}`;
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/5547999999939?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/5571983654363?text=${encodedMessage}`;
     window.open(whatsappUrl, '_blank');
   };
 
