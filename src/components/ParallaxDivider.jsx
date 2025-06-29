@@ -1,5 +1,5 @@
 import React from 'react';
-import parallaxBg from '../assets/images/hero-bg.jpeg'; // Nova imagem de fundo
+import parallaxBg from '../../public/images/hero-bg.jpeg'; // Nova imagem de fundo
 
 const ParallaxDivider = () => {
   return (

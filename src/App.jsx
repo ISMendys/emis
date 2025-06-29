@@ -24,8 +24,7 @@ import ParallaxDivider from './components/ParallaxDivider'; // Novo componente
 import { siteData } from './data/siteData';
 
 // Imagens
-import heroImage from './assets/images/hero-bg.jpeg';
-// import parallaxBg from './assets/images/parallax-bg.jpeg'; // Removido, pois já é importado dentro do ParallaxDivider
+import heroImage from '../public/images/hero-bg.jpeg';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
