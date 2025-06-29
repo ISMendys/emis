@@ -17,8 +17,8 @@ export const siteData = {
       title: "Cortina de Tecido",
       description: "Elegância e sofisticação para sua sala, com diversas opções de tecidos e cores para combinar com seu ambiente.",
       images: [
-        "/src/assets/images/cortina-tecido/cortina3.jpeg",
-        "/src/assets/images/cortina-tecido/cortina6.jpeg"
+        "/src/images/cortina-tecido/cortina3.jpeg",
+        "/src/images/cortina-tecido/cortina6.jpeg"
       ],
       details: [
         "Tecidos de alta qualidade",
@@ -32,8 +32,8 @@ export const siteData = {
       title: "Persiana Romana",
       description: "Funcionalidade e estilo clássico, ideal para quem busca um visual clean e moderno com a praticidade das persianas.",
       images: [
-        "/src/assets/images/persiana-romana/cortina1.jpeg",
-        "/src/assets/images/persiana-romana/cortina2.jpeg"
+        "/src/images/persiana-romana/cortina1.jpeg",
+        "/src/images/persiana-romana/cortina2.jpeg"
       ],
       details: [
         "Design elegante e minimalista",
@@ -47,11 +47,11 @@ export const siteData = {
       title: "Cortina com Blackout",
       description: "Controle total da luminosidade e privacidade, perfeita para quartos e ambientes que exigem escuridão total.",
       images: [
-        "/src/assets/images/cortina-blackout/cortina1.jpeg",
-        "/src/assets/images/cortina-blackout/cortina2.jpeg",
-        "/src/assets/images/cortina-blackout/cortina3.jpeg",
-        "/src/assets/images/cortina-blackout/cortina4.jpeg",
-        "/src/assets/images/cortina-blackout/cortina5.jpeg",
+        "/src/images/cortina-blackout/cortina1.jpeg",
+        "/src/images/cortina-blackout/cortina2.jpeg",
+        "/src/images/cortina-blackout/cortina3.jpeg",
+        "/src/images/cortina-blackout/cortina4.jpeg",
+        "/src/images/cortina-blackout/cortina5.jpeg",
       ],
       details: [
         "Bloqueio de 100% da luz",
@@ -65,9 +65,9 @@ export const siteData = {
       title: "Persiana Rolo",
       description: "Modernidade e praticidade em um só produto, com design discreto e fácil de usar, se adapta a qualquer estilo de decoração.",
       images: [
-        "/src/assets/images/persiana-rolo/cortina1.jpeg",
-        "/src/assets/images/persiana-rolo/cortina2.jpeg",
-        "/src/assets/images/persiana-rolo/cortina3.jpeg"
+        "/src/images/persiana-rolo/cortina1.jpeg",
+        "/src/images/persiana-rolo/cortina2.jpeg",
+        "/src/images/persiana-rolo/cortina3.jpeg"
       ],
       details: [
         "Acionamento manual ou motorizado",
@@ -84,7 +84,7 @@ export const siteData = {
       id: 1,
       title: "Sala de Estar",
       location: "Salvador - BA",
-      image: "/src/assets/images/sala/cortina2.jpeg",
+      image: "/src/images/sala/cortina2.jpeg",
       description: "Projeto de sala de estar que combina cortinas elegantes com persianas romanas para criar um ambiente acolhedor e sofisticado.",
       details: [
         "Cortinas de tecido em linho",
@@ -93,19 +93,19 @@ export const siteData = {
         "Iluminação indireta para aconchego"
       ],
       gallery: [
-        "/src/assets/images/sala/cortina6.jpeg",
-        "/src/assets/images/sala/cortina2.jpeg",
-        "/src/assets/images/sala/cortina3.jpeg",
-        "/src/assets/images/sala/cortina4.jpeg",
-        "/src/assets/images/sala/cortina5.jpeg",
-        "/src/assets/images/sala/cortina1.jpeg",
+        "/src/images/sala/cortina6.jpeg",
+        "/src/images/sala/cortina2.jpeg",
+        "/src/images/sala/cortina3.jpeg",
+        "/src/images/sala/cortina4.jpeg",
+        "/src/images/sala/cortina5.jpeg",
+        "/src/images/sala/cortina1.jpeg",
       ]
     },
     {
       id: 2,
       title: "Quarto",
       location: "Salvador - BA",
-      image: "/src/assets/images/quarto/cortina1.jpeg",
+      image: "/src/images/quarto/cortina1.jpeg",
       description: "Quarto master com cortinas blackout para total privacidade e controle de luz, complementado por uma decoração minimalista.",
       details: [
         "Cortinas blackout em tecido duplo",
@@ -114,21 +114,21 @@ export const siteData = {
         "Piso laminado"
       ],
       gallery: [
-        "/src/assets/images/quarto/cortina1.jpeg",
-        "/src/assets/images/quarto/cortina2.jpeg",
-        "/src/assets/images/quarto/cortina3.jpeg",
-        "/src/assets/images/quarto/cortina4.jpeg",
-        "/src/assets/images/quarto/cortina5.jpeg",
-        "/src/assets/images/quarto/cortina6.jpeg",
-        // "/src/assets/images/quarto/cortina7.jpeg",
-        "/src/assets/images/quarto/cortina8.jpeg",
+        "/src/images/quarto/cortina1.jpeg",
+        "/src/images/quarto/cortina2.jpeg",
+        "/src/images/quarto/cortina3.jpeg",
+        "/src/images/quarto/cortina4.jpeg",
+        "/src/images/quarto/cortina5.jpeg",
+        "/src/images/quarto/cortina6.jpeg",
+        // "/src/images/quarto/cortina7.jpeg",
+        "/src/images/quarto/cortina8.jpeg",
       ]
     },
     {
       id: 3,
       title: "Comercial",
       location: "Salvador, Bomfim - BA",
-      image: "/src/assets/images/comercial/cortina1.jpeg",
+      image: "/src/images/comercial/cortina1.jpeg",
       description: "Escritório moderno e funcional com persianas romanas que oferecem controle de luz ideal para o ambiente de trabalho.",
       details: [
         "Persianas romanas com filtro solar",
@@ -137,21 +137,21 @@ export const siteData = {
         "Cadeira confortável"
       ],
       gallery: [
-        "/src/assets/images/comercial/cortina1.jpeg",
-        "/src/assets/images/comercial/cortina2.jpeg",
-        "/src/assets/images/comercial/cortina3.jpeg",
-        "/src/assets/images/comercial/cortina4.jpeg",
-        "/src/assets/images/comercial/cortina5.jpeg",
-        "/src/assets/images/comercial/cortina6.jpeg",
-        "/src/assets/images/comercial/cortina7.jpeg",
-        "/src/assets/images/comercial/cortina8.jpeg",
+        "/src/images/comercial/cortina1.jpeg",
+        "/src/images/comercial/cortina2.jpeg",
+        "/src/images/comercial/cortina3.jpeg",
+        "/src/images/comercial/cortina4.jpeg",
+        "/src/images/comercial/cortina5.jpeg",
+        "/src/images/comercial/cortina6.jpeg",
+        "/src/images/comercial/cortina7.jpeg",
+        "/src/images/comercial/cortina8.jpeg",
       ]
     },
     {
       id: 4,
       title: "Capas",
       location: "Salvador - BA",
-      image: "/src/assets/images/capas/capa1.jpeg",
+      image: "/src/images/capas/capa1.jpeg",
       description: "Sala de jantar elegante com cortinas rolo que proporcionam um visual clean e sofisticado, ideal para refeições em família.",
       details: [
         "Cortinas rolo em tecido screen",
@@ -160,12 +160,12 @@ export const siteData = {
         "Buffet com espelho"
       ],
       gallery: [
-        "/src/assets/images/capas/capa1.jpeg",
-        "/src/assets/images/capas/capa2.jpeg",
-        "/src/assets/images/capas/capa3.jpg",
-        "/src/assets/images/capas/capa4.jpg",
-        "/src/assets/images/capas/capa5.jpg",
-        "/src/assets/images/capas/capa6.jpg"
+        "/src/images/capas/capa1.jpeg",
+        "/src/images/capas/capa2.jpeg",
+        "/src/images/capas/capa3.jpg",
+        "/src/images/capas/capa4.jpg",
+        "/src/images/capas/capa5.jpg",
+        "/src/images/capas/capa6.jpg"
       ]
     }
   ],
