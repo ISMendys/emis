@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: #FFFFFF;
+  --foreground: #00002F; /* Azul Marinho Escuro */
+  --card: #FFFFFF;
+  --card-foreground: #00002F;
+  --popover: #FFFFFF;
+  --popover-foreground: #00002F;
+  --primary: #00002F; /* Azul Marinho Escuro */
+  --primary-foreground: #FFFFFF;
+  --secondary: #F5F5F5;
+  --secondary-foreground: #00002F;
+  --muted: #F5F5F5;
+  --muted-foreground: #666666;
+  --accent: #FDD736; /* Dourado */
+  --accent-foreground: #00002F;
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: #E5E5E5;
+  --input: #F5F5F5;
+  --ring: #FDD736; /* Dourado */
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+
+/* Estilos customizados para EMIS Decorações */
+.font-playfair {
+  font-family: "Playfair Display", serif;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.bg-navy {
+  background-color: #00002F; /* Azul Marinho Escuro */
+}
+
+.bg-gold {
+  background-color: #FDD736; /* Dourado */
+}
+
+.text-navy {
+  color: #00002F; /* Azul Marinho Escuro */
+}
+
+.text-gold {
+  color: #FDD736; /* Dourado */
+}
+
+.border-gold {
+  border-color: #FDD736; /* Dourado */
+}
+
+/* Hero section overlay - REMOVIDO */
+.hero-overlay {
+  background: none; /* Removido */
+}
+
+/* Hover effects */
+.hover-gold:hover {
+  background-color: #D7B529; /* Dourado mais escuro para hover */
+  color: #00002F; /* Texto azul marinho escuro */
+  transition: all 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Smooth animations */
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #FDD736, #D7B529); /* Tons de Dourado */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom button styles */
+.btn-gold {
+  background-color: #FDD736; /* Dourado */
+  color: #00002F; /* Azul Marinho Escuro */
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-gold:hover {
+  background-color: #D7B529; /* Dourado mais escuro para hover */
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(253, 215, 54, 0.3);
+}
+
+/* Product card overlay */
+.product-overlay {
+  background: linear-gradient(to top, rgba(47, 38, 0, 0.8), transparent); /* Azul Marinho Escuro */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-overlay {
+  opacity: 1;
+}
+
+/* project card overlay */
+.project-overlay {
+  background: linear-gradient(to top, rgba(47, 38, 0, 0.8), transparent); /* Azul Marinho Escuro */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+
+/* Floating WhatsApp button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #00002F;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(255, 187, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(190, 146, 2, 0.4);
+}
+
+/* Section spacing */
+.section-padding {
+  padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 60px 0;
+  }
+}
+
+/* Cursor pointer for menu items */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Project card text color on hover */
+.project-card-overlay-text {
+  color: #00002F; /* Branco para visibilidade */
+}
+
+.project-card:hover .project-card-overlay-text {
+  color: #FDD736; /* Dourado para hover */
+}
+
+/* product card text color on hover */
+.product-card-overlay-text {
+  color: #00002F; /* Branco para visibilidade */
+}
+
+.product-card:hover .product-card-overlay-text {
+  color: #FDD736; /* Dourado para hover */
+}
+
+
+.swiper-button-next, .swiper-button-prev {
+  color: #FDD736 !important; /* Dourado */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #FDD736 !important; /* Dourado */
+}
+
+/* Footer links hover */
+.footer-link {
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #FDD736 !important; /* Dourado */
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75); /* Fundo semi-transparente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.modal-overlay.open {
+  opacity: 1;
+}
+
+.modal-content {
+  background-color: #FFFFFF;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  transform: scale(0.9);
+  transition: transform 0.3s ease-in-out;
+}
+
+.modal-overlay.open .modal-content {
+  transform: scale(1);
+}
+
+.modal-close-button {
+  color: #00002F; /* Azul Marinho Escuro */
+  transition: color 0.3s ease;
+}
+
+.modal-close-button:hover {
+  color: #FDD736; /* Dourado */
+}
+
+.modal-title {
+  color: #00002F; /* Azul Marinho Escuro */
+}
+
+.modal-description, .modal-details-item {
+  color: #333333;
+}
+
+.modal-details-title {
+  color: #00002F; /* Azul Marinho Escuro */
+}
+
+.modal-button {
+  background-color: #FDD736; /* Dourado */
+  color: #00002F; /* Azul Marinho Escuro */
+  transition: background-color 0.3s ease;
+}
+
+.modal-button:hover {
+  background-color: #D7B529; /* Dourado mais escuro */
+}
+
+/* Ajustes para o modal */
+.modal-content.product-modal {
+  max-width: 600px; /* Largura menor para o modal de produto */
+}
+
+.modal-content.project-modal {
+  max-width: 800px; /* Largura um pouco maior para o modal de projeto com galeria */
+}
+
+.swiper-slide img {
+  height: 200px; /* Altura menor para os previews da galeria */
+  object-fit: cover;
+}
+
+.mySwiper.mt-2 .swiper-slide {
+  width: 100px !important; /* Largura menor para os thumbnails */
+  height: 70px; /* Altura menor para os thumbnails */
+}
+
+.mySwiper.mt-2 .swiper-slide img {
+  height: 100%;
+}
+
+
