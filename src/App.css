@@ -210,28 +210,6 @@
   box-shadow: 0 8px 25px rgba(253, 215, 54, 0.3);
 }
 
-/* Product card overlay */
-.product-overlay {
-  background: linear-gradient(to top, rgba(47, 38, 0, 0.8), transparent); /* Azul Marinho Escuro */
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.product-card:hover .product-overlay {
-  opacity: 1;
-}
-
-/* project card overlay */
-.project-overlay {
-  background: linear-gradient(to top, rgba(47, 38, 0, 0.8), transparent); /* Azul Marinho Escuro */
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.project-card:hover .project-overlay {
-  opacity: 1;
-}
-
 
 /* Floating WhatsApp button */
 .whatsapp-float {

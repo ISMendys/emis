@@ -13,7 +13,12 @@ const ProductCard = ({ image, title, description, className = "", onClick }) => 
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
       </div>
-      <div className="product-overlay absolute inset-0 flex items-end p-6">
+      <div 
+        className="absolute inset-0 flex items-end p-6 
+                   bg-[linear-gradient(to_top,rgba(47,38,0,0.8),transparent)] 
+                   transition-opacity duration-300 ease-in-out 
+                   opacity-100 md:opacity-0 group-hover:opacity-100"
+      >
         <div className="text-white">
           <h3 className="font-playfair text-xl font-semibold mb-2">{title}</h3>
           {description && (
